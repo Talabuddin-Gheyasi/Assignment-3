@@ -1,0 +1,40 @@
+body {
+background: gray;
+
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+
+.buttons input[type="radio"]{
+    display: none;
+    }
+.buttons label {
+    padding: 25px;
+    background: gray;
+    font-weight: bold;
+    }
+.buttons .tab{
+    width: 100%;
+    padding: 20px;
+    background: white;
+    order: 1;
+    display: none;
+
+}
+
+.buttons tab h2 {
+    font-size: 13px;
+}
+.buttons input[type='radio']:checked+label+.tab{
+    display: block;
+}
+.buttons input[type='radio']:checked+label{
+    background: white;
+}
